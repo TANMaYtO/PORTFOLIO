@@ -260,7 +260,7 @@ export default function MenuScreen() {
             gsap.to([menuSpikesRef.current, gridRef.current, statsRef.current], { 
                 opacity: 1, scale: 1, filter: 'blur(0px)', duration: 0.5, delay: 0.3
             });
-            gsap.to(eyeHubRef.current?.container, { 
+            gsap.to(eyeHubRef.current?.container || null, { 
                 opacity: 1, scale: 1.5, filter: 'blur(0px)', duration: 0.5, delay: 0.3,
                 onComplete: () => {
                     // Wipe the memory ONLY after the animation finishes!
