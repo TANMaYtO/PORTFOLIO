@@ -49,7 +49,7 @@ export default function AboutScreen() {
     const handRef = useRef<HTMLDivElement>(null); // ✋ ADDED HAND REF
     const backBtnRef = useRef<HTMLButtonElement>(null);
     
-    const masterTl = useRef<gsap.core.Timeline>();
+    const masterTl = useRef<gsap.core.Timeline | null>(null);
 
     useGSAP(() => {
         masterTl.current = gsap.timeline({ 

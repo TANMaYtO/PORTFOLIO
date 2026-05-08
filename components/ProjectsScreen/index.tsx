@@ -51,7 +51,7 @@ export default function ProjectsScreen() {
     const backBtnRef = useRef<HTMLButtonElement>(null);
     
     // Store the master timeline so we can reverse it!
-    const masterTl = useRef<gsap.core.Timeline>();
+    const masterTl = useRef<gsap.core.Timeline | null>(null);
 
     const activeProject = PROJECTS_DATA[activeIndex];
 

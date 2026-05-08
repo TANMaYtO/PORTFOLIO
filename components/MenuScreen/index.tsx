@@ -120,6 +120,7 @@ export default function MenuScreen() {
     const textRefs  = useRef<(HTMLHeadingElement | null)[]>([]);
     const bgRefs    = useRef<(HTMLDivElement | null)[]>([]);
     const glowRefs  = useRef<(HTMLDivElement | null)[]>([]);
+    
 
     if (textRefs.current.length === 0) {
         textRefs.current  = Array(BLADES.length).fill(null);

@@ -23,7 +23,7 @@ export default function ContactScreen() {
     const handRef = useRef<HTMLDivElement>(null);
     const backBtnRef = useRef<HTMLButtonElement>(null);
     
-    const masterTl = useRef<gsap.core.Timeline>();
+    const masterTl = useRef<gsap.core.Timeline | null>(null);
 
     useGSAP(() => {
         masterTl.current = gsap.timeline({ 
