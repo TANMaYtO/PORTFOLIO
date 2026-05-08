@@ -224,7 +224,7 @@ export default function MenuScreen() {
         });
 
         tl.to(menuSpikesRef.current, { scale: 0.95, opacity: 0, duration: 0.4, ease: "power2.in" }, 0)
-          .to(eyeHubRef.current?.container, { scale: 1.4, opacity: 0, duration: 0.4, ease: "power2.in" }, 0)
+          .to(eyeHubRef.current?.container || null, { scale: 1.4, opacity: 0, duration: 0.4, ease: "power2.in" }, 0)
           .to(gridRef.current, { opacity: 0, duration: 0.3 }, 0)
           .to(statsRef.current, { opacity: 0, duration: 0.3 }, 0)
           .to(colorWipeRef.current, {
